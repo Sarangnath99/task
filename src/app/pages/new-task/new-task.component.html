@@ -1,0 +1,51 @@
+<div class="col-lg-6  de ">
+    <form [formGroup]="taskForm" (ngSubmit)="taskAdd()" >
+        <h2>Enter Employee details</h2>
+        <!-- ordered item  -->
+        <label id="lohi" required>
+
+        </label>
+        <!-- //Employeename -->
+        <input type="text" class="form-control" placeholder="Enter your EmployeeName" name="Employeename"
+            formControlName="Employeename" id="empdetails" required>
+       
+
+        <!-- empcode -->
+        <input type="text" class="form-control" placeholder="Enter your EMPCODE" name="Empcode"
+            formControlName="Empcode" id="empdetails1" required>
+       
+
+        <!-- Designation  -->
+        <input type="text" class="form-control" placeholder="Enter  Employee Designation" name="designation"
+            formControlName="" id="empdetails2" required>
+            <!-- Task -->
+            <input type="text" class="form-control" placeholder="Enter theTask" name="taskname"
+            formControlName="" id="empdetails3" required>
+      
+            <!-- status -->
+            
+            <div class="dropdown">
+                <label for="status" >Task Status</label>
+                <select class="form-select form-select-lg mb-3 " id="status" formControlName="status" name="status">
+                    <option value="1">Active</option>
+                    <option value="2">Pending</option>
+                    <option value="3">Completed</option>
+                  </select>
+                  
+                  
+              </div>
+
+        <!-- password  -->
+        <input type="password" class="form-control" placeholder="Enter Employee Emp password" name="Emp_pswd"
+            formControlName="Emp_pswd" id="empdetails4" required>
+    
+        <br>
+        
+
+      
+        <button class="btn btn-md btn-dark mt-3" type="submit">ADD</button>
+    </form>
+</div>
+
+
+
